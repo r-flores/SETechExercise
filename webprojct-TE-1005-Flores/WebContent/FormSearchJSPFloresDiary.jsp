@@ -15,11 +15,6 @@ h1 {
 h3 {
     background-color:#f2e6ff;  	      
 }
-section {
-    width:350px;
-    float:left;
-    padding:10px;	 	 
-}
 h2 {
     background-color:#cc99ff;
     color:white;
