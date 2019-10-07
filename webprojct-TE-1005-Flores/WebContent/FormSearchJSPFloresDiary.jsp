@@ -77,8 +77,7 @@ h2 {
 
 				// Display values to webpage.
 				sb.append("EntryID: " + id + "<br>");
-				sb.append("First Name: " + Fname + "<br>");
-				sb.append("Last Name: " + Lname + "<br>");
+				sb.append("Name: " + Fname + " " + Lname + "<br>");
 				sb.append("Email: " + email + "<br>");
 				sb.append("Date: " + date + "<br>");
 				sb.append("Entry: " + entry + "<br>");

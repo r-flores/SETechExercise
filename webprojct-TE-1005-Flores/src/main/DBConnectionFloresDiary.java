@@ -1,3 +1,4 @@
+package main;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -17,7 +18,7 @@ public class DBConnectionFloresDiary {
 
       connection = null;
       try {
-         UtilPropDBFloresDiary.loadProperty();
+         //UtilPropDBFloresDiary.loadProperty();
          connection = DriverManager.getConnection(getURL(), getUserName(), getPassword());
       } catch (Exception e) {
          System.out.println("Connection Failed! Check output console");
@@ -33,20 +34,17 @@ public class DBConnectionFloresDiary {
    }
 
    static String getURL() {
-      String url = UtilPropDBFloresDiary.getProp("url");
-      System.out.println("[DBG] URL: " + url);
+      String url = "jdbc:mysql://ec2-13-59-224-79.us-east-2.compute.amazonaws.com:3306/MyDBFloresTE";
       return url;
    }
 
    static String getUserName() {
-      String usr = UtilPropDBFloresDiary.getProp("user");
-      System.out.println("[DBG] URL: " + usr);
+      String usr = "rickyremote";
       return usr;
    }
 
    static String getPassword() {
-      String pwd = UtilPropDBFloresDiary.getProp("password");
-      System.out.println("[DBG] URL: " + pwd);
+      String pwd = "xenoblade7";
       return pwd;
    }
 }
